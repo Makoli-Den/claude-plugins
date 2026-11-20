@@ -1,0 +1,12 @@
+{
+  "name": "makoli-plugins",
+  "description": "Плагины Claude Code: языковые серверы для веб-разработки",
+  "owner": { "name": "Makoli-Den" },
+  "plugins": [
+    {
+      "name": "lsp-web",
+      "source": "./plugins/lsp-web",
+      "description": "LSP для CSS, LESS, SCSS и HTML. Требует: npm i -g vscode-langservers-extracted"
+    }
+  ]
+}

@@ -1,12 +1,17 @@
 {
   "name": "makoli-plugins",
-  "description": "Claude Code plugins: language servers for web development",
+  "description": "Claude Code plugins: language servers for web development and SQL",
   "owner": { "name": "Makoli-Den" },
   "plugins": [
     {
       "name": "lsp-web",
       "source": "./plugins/lsp-web",
       "description": "LSP for CSS, LESS, SCSS and HTML. Requires: npm i -g vscode-langservers-extracted"
+    },
+    {
+      "name": "lsp-sql",
+      "source": "./plugins/lsp-sql",
+      "description": "LSP for SQL (sqruff). Requires: pip install sqruff"
     }
   ]
 }

@@ -1,0 +1,11 @@
+{
+  "sql": {
+    "command": "sqruff",
+    "args": ["lsp"],
+    "extensionToLanguage": {
+      ".sql": "sql",
+      ".psql": "sql",
+      ".pgsql": "sql"
+    }
+  }
+}

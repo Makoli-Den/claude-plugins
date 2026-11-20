@@ -1,0 +1,7 @@
+{
+  "name": "lsp-sql",
+  "version": "1.0.0",
+  "description": "LSP for SQL (sqruff)",
+  "author": { "name": "Makoli-Den" },
+  "license": "MIT"
+}

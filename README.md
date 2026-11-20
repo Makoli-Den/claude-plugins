@@ -1,38 +1,38 @@
 # claude-plugins
 
-Маркетплейс плагинов для Claude Code.
+A plugin marketplace for Claude Code.
 
 ## lsp-web
 
-Плагин подключает языковые серверы (LSP) для веб-разработки: CSS, LESS, SCSS и HTML. Благодаря им Claude Code видит ошибки и предупреждения в таких файлах, понимает структуру стилей и разметки и точнее ищет определения и использования символов. Плагин только запускает локальные серверы `vscode-css-language-server` и `vscode-html-language-server` через stdio. Он ничего не скачивает, не отправляет данные в сеть и не меняет настройки.
+This plugin connects language servers (LSP) for web development: CSS, LESS, SCSS and HTML. With them, Claude Code sees errors and warnings in such files, understands the structure of stylesheets and markup, and finds symbol definitions and usages more accurately. The plugin only launches the local `vscode-css-language-server` and `vscode-html-language-server` servers over stdio. It downloads nothing, sends no data over the network and changes no settings.
 
-### Что умеет
+### Supported files
 
-- `.css`, `.less`, `.scss` — сервер `vscode-css-language-server`
-- `.html`, `.htm` — сервер `vscode-html-language-server`
+- `.css`, `.less`, `.scss` — `vscode-css-language-server`
+- `.html`, `.htm` — `vscode-html-language-server`
 
-### Установка
+### Installation
 
-1. Установите языковые серверы. Плагин их не ставит:
+1. Install the language servers. The plugin does not install them:
 
    ```
    npm install -g vscode-langservers-extracted
    ```
 
-2. Добавьте маркетплейс и установите плагин:
+2. Add the marketplace and install the plugin:
 
    ```
    /plugin marketplace add Makoli-Den/claude-plugins
    /plugin install lsp-web@makoli-plugins
    ```
 
-3. Выполните `/reload-plugins`. В выводе число `plugin LSP servers` должно увеличиться на 2.
+3. Run `/reload-plugins`. The `plugin LSP servers` count in the output should increase by 2.
 
-### Требования
+### Requirements
 
-- Node.js и npm для установки серверов.
-- Бинарники `vscode-css-language-server` и `vscode-html-language-server` должны быть в `PATH`. Проверка: `vscode-css-language-server --help`.
+- Node.js and npm to install the servers.
+- The `vscode-css-language-server` and `vscode-html-language-server` binaries must be on your `PATH`. Check with `vscode-css-language-server --help`.
 
-### Лицензия
+### License
 
-MIT, см. файл `LICENSE`.
+MIT, see the `LICENSE` file.
